@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Report Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #generateButton {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #downloadLink {
+            display: none; /* Initially hidden */
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate Patient Report</h1>
+    <button id="generateButton">Generate Report</button>
+    <a id="downloadLink" style="display: none;">Download Report</a>
+
+    <script>
+        const generateButton = document.getElementById('generateButton');
+        const downloadLink = document.getElementById('downloadLink');
+
+        let jsonData;
+
+        fetch('/get_report_data')
+            .then(response => response.json())
+            .then(data => {
+                jsonData = data;
+                console.log("JSON data fetched:", jsonData);
+                generateButton.disabled = false;
+            })
+            .catch(error => {
+                console.error("Error fetching JSON:", error);
+                generateButton.disabled = true;
+            });
+
+        generateButton.addEventListener('click', () => {
+            generateButton.disabled = true;
+
+            if (!jsonData) {
+                console.error("No JSON data available.");
+                generateButton.disabled = false;
+                return;
+            }
+
+            fetch('/generate_report', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(jsonData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.blob(); // Get the response as a Blob
+                } else {
+                    return response.text().then(err => {throw new Error(err)}); // Improved error handling
+                }
+            })
+            .then(blob => {
+                const blobUrl = window.URL.createObjectURL(blob);
+                downloadLink.href = blobUrl;
+                downloadLink.download = 'patient_report.pdf';
+                downloadLink.style.display = 'block';
+                generateButton.disabled = false;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                generateButton.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>

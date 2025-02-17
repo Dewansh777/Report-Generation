@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/        # Or your virtual environment folder name
+venv/
+*.DS_Store   # For macOS
+.env         # For environment variables
+*.log       # Ignore log files

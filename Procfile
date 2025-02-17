@@ -1,1 +1,1 @@
-web: gunicorn r_g:app --workers 1 --bind 0.0.0.0:$PORT --worker-class uvicorn.workers.UvicornWorker
+web: uvicorn r_g:app --host 0.0.0.0 --port $PORT

@@ -347,6 +347,9 @@ async def generate_report_route(request: Request):
 async def read_root():
     return FileResponse("index.html")
 
+@app.head("/")
+def check_server():
+    return Response(headers={"Report Generator-Server-Status": "Active"})
 
 if __name__ == "__main__":
     import uvicorn

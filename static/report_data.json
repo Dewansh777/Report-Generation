@@ -1,131 +1,192 @@
 {
     "patient_data": {
-        "name": "Anmol Mishra",
-        "uhid": "2105561",
-        "age_sex": "21/M",
-        "chief_complaints": "Excessive sneezing x 1 year",
-        "aggravating_factor": "Change in weather",
-        "present_illness": "No h/o nasal block/bleed",
-        "family_history": "Mother has allergic rhinitis",
-        "surgical_history": "No",
-        "examination": "Nasal mucosa mild congested, Throat-granular pharyngitis",
-        "clinical_impression": "Allergic rhinitis with granular pharyngitis"
+      "name": "Anmol Mishra",
+      "uhid": "2105561",
+      "age": "21",
+      "sex":"Male",
+      "date":"28/02/2025",
+      "chief_complaints": "Excessive sneezing x 1 year",
+      "aggravating_factor": "Change in weather",
+      "present_illness": "No h/o nasal block/bleed",
+      "family_history": "Mother has allergic rhinitis",
+      "surgical_history": "No",
+      "examination": "Nasal mucosa mild congested, Throat-granular pharyngitis",
+      "clinical_impression": "Allergic rhinitis with granular pharyngitis"
     },
     "hospital_data": {
-        "name": "HealthSync Hospital",
-        "address": "Ludhiana, Punjab, India",
-        "phone": "+91-161-XXXXXXX",
-        "email": "info@healthsync.com",
-        "website": "www.healthsync.com",
-        "emergency": "+91-161-XXXXXXX",
-        "footer": {
-            "name": "Fortis Hospital",
-            "address": "Chandigarh Road, Ludhiana",
-            "email": "contactus.ludhiana@fortishealthcare.com",
-            "phone": "+91-161-5222333"
-        }
+      "name": "HealthSync Hospital",
+      "address": "Ludhiana, Punjab, India",
+      "phone": "+91-161-XXXXXXX",
+      "email": "info@healthsync.com",
+      "website": "www.healthsync.com",
+      "emergency": "+91-161-XXXXXXX",
+      "footer": {
+        "name": "Fortis Hospital",
+        "address": "Chandigarh Road, Ludhiana",
+        "email": "contactus.ludhiana@fortishealthcare.com",
+        "phone": "+91-161-5222333"
+      }
     },
     "doctor_data": {
-        "name": "Dr. Anmol Rattan Kath",
-        "degree": "MBBS, MS (Otorhinolaryngology), Fellowship (Head and Neck Surgery)",
-        "speciality": "Consultant, Head and Neck Surgery",
-        "mobile": "+91 95015 87435",
-        "email": "anmol.kath@fortishealthcare.com",
-        "pmc": "46528"
+      "name": "Dr. Anmol Rattan Kath",
+      "degree": "MBBS, MS (Otorhinolaryngology), Fellowship (Head and Neck Surgery)",
+      "speciality": "Consultant, Head and Neck Surgery",
+      "mobile": "+91 95015 87435",
+      "email": "anmol.kath@fortishealthcare.com",
+      "pmc": "46528"
     },
- 
     "advice_data": [
-        {
-            "name": "Fluticasone Nasal Spray",
-            "dosage": "2 sprays BD",
-            "details": "Use twice daily, morning and evening."
-        },
-        {
-            "name": "Cetirizine Tablets",
-            "dosage": "10mg OD",
-            "details": "Take once daily in the morning."
-        },
-        {
-            "name": "Montelukast Tablets",
-            "dosage": "10mg HS",
-            "details": "Take at bedtime."
-        },
-        {
-            "name": "Saline Nasal Drops",
-            "dosage": "2 drops in each nostril TID",
-            "details": "Use three times a day."
-        },
-        {
-            "name": "Paracetamol Tablets",
-            "dosage": "500mg QID PRN",
-            "details": "Take as needed for pain or fever, up to four times a day."
-        },
-        {
-            "name": "Ibuprofen Tablets",
-            "dosage": "400mg TID PRN",
-            "details": "Take three times a day as needed for pain."
-        },
-        {
-            "name": "Amoxicillin Capsules",
-            "dosage": "500mg TID",
-            "details": "Take three times a day for 7 days."
-        },
-        {
-            "name": "Clarithromycin Tablets",
-            "dosage": "250mg BD",
-            "details": "Take twice a day for 7 days."
-        },
-        {
-            "name": "Prednisone Tablets",
-            "dosage": "10mg OD",
-            "details": "Take once daily in the morning for 5 days, then taper as directed."
-        },
-        {
-            "name": "Albuterol Inhaler",
-            "dosage": "2 puffs QID PRN",
-            "details": "Use as needed for shortness of breath or wheezing."
-        },
-        {
-            "name": "Loratadine Tablets",
-            "dosage": "10mg OD",
-            "details": "Take once daily."
-        },
-        {
-            "name": "Diphenhydramine Capsules",
-            "dosage": "25mg TID PRN",
-            "details": "Take as needed for allergies or sleep."
-        },
-        {
-            "name": "Guaifenesin Syrup",
-            "dosage": "10ml QID",
-            "details": "Take four times a day with plenty of fluids."
-        },
-        {
-            "name": "Dextromethorphan Syrup",
-            "dosage": "15ml QID PRN",
-            "details": "Take as needed for cough."
-        },
-        {
-            "name": "Omeprazole Capsules",
-            "dosage": "20mg OD",
-            "details": "Take once daily in the morning before food."
-        }
+      {
+        "name": "Fluticasone Nasal Spray",
+        "dosage": "2 sprays BD",
+        "details": "Use twice daily, morning and evening."
+      },
+      {
+        "name": "Cetirizine Tablets",
+        "dosage": "10mg OD",
+        "details": "Take once daily in the morning."
+      },
+      {
+        "name": "Montelukast Tablets",
+        "dosage": "10mg HS",
+        "details": "Take at bedtime."
+      },
+      {
+        "name": "Saline Nasal Drops",
+        "dosage": "2 drops in each nostril TID",
+        "details": "Use three times a day."
+      },
+      {
+        "name": "Paracetamol Tablets",
+        "dosage": "500mg QID PRN",
+        "details": "Take as needed for pain or fever, up to four times a day."
+      },
+      {
+        "name": "Ibuprofen Tablets",
+        "dosage": "400mg TID PRN",
+        "details": "Take three times a day as needed for pain."
+      },
+      {
+        "name": "Amoxicillin Capsules",
+        "dosage": "500mg TID",
+        "details": "Take three times a day for 7 days."
+      },
+      {
+        "name": "Clarithromycin Tablets",
+        "dosage": "250mg BD",
+        "details": "Take twice a day for 7 days."
+      },
+      {
+        "name": "Prednisone Tablets",
+        "dosage": "10mg OD",
+        "details": "Take once daily in the morning for 5 days, then taper as directed."
+      },
+      {
+        "name": "Albuterol Inhaler",
+        "dosage": "2 puffs QID PRN",
+        "details": "Use as needed for shortness of breath or wheezing."
+      },
+      {
+        "name": "Loratadine Tablets",
+        "dosage": "10mg OD",
+        "details": "Take once daily."
+      },
+      {
+        "name": "Diphenhydramine Capsules",
+        "dosage": "25mg TID PRN",
+        "details": "Take as needed for allergies or sleep."
+      },
+      {
+        "name": "Guaifenesin Syrup",
+        "dosage": "10ml QID",
+        "details": "Take four times a day with plenty of fluids."
+      },
+      {
+        "name": "Dextromethorphan Syrup",
+        "dosage": "15ml QID PRN",
+        "details": "Take as needed for cough."
+      },
+      {
+        "name": "Omeprazole Capsules",
+        "dosage": "20mg OD",
+        "details": "Take once daily in the morning before food."
+      }
     ],
     "previous_reports": [
-        "Consultation on 2024-12-15: Mild congestion, advised saline nasal spray.",
-        "Follow-up appointment on 2025-01-10: Symptoms improved, continue current treatment.",
-        "Patient seen on 2025-02-05: New complaint of ear pain, prescribed ear drops.",
-        "Discussed allergy management plan on 2025-03-01: Recommended environmental control measures.",
-        "Annual check-up on 2025-04-15: General health good, advised healthy lifestyle.",
-        "Patient reported persistent cough on 2025-05-20: Chest X-ray ordered.",
-        "X-ray results reviewed on 2025-05-25: No significant findings, cough medication prescribed.",
-        "Follow-up for cough on 2025-06-10: Cough improving, continue medication.",
-        "Patient seen for routine check-up on 2025-07-01: Allergic symptoms well controlled.",
-        "Discussed travel plans on 2025-08-10: Provided travel health advice.",
-        "Patient reported seasonal allergies on 2025-09-05: Adjusted allergy medication.",
-        "Follow-up for allergies on 2025-10-01: Symptoms responding well to treatment.",
-        "Patient seen for flu vaccination on 2025-11-15: Vaccine administered.",
-        "Discussed stress management techniques on 2025-12-20: Recommended relaxation exercises.",
-        "Patient reported occasional headaches on 2026-01-10: Advised over-the-counter pain relief."
+      {
+        "date": "2024-12-15",
+        "hospital": "Regional Clinic",
+        "consultation": "Mild congestion, advised saline nasal spray."
+      },
+      {
+        "date": "2025-01-10",
+        "hospital": "City Hospital",
+        "consultation": "Symptoms improved, continue current treatment."
+      },
+      {
+        "date": "2025-02-05",
+        "hospital": "City Hospital",
+        "consultation": "New complaint of ear pain, prescribed ear drops."
+      },
+      {
+        "date": "2025-03-01",
+        "hospital": "City Hospital",
+        "consultation": "Discussed allergy management plan, recommended environmental control measures."
+      },
+      {
+        "date": "2025-04-15",
+        "hospital": "City Hospital",
+        "consultation": "Annual check-up, general health good, advised healthy lifestyle."
+      },
+      {
+        "date": "2025-05-20",
+        "hospital": "City Hospital",
+        "consultation": "Persistent cough, Chest X-ray ordered."
+      },
+      {
+        "date": "2025-05-25",
+        "hospital": "City Hospital",
+        "consultation": "X-ray results reviewed, no significant findings, cough medication prescribed."
+      },
+      {
+        "date": "2025-06-10",
+        "hospital": "City Hospital",
+        "consultation": "Follow-up for cough, cough improving, continue medication."
+      },
+      {
+        "date": "2025-07-01",
+        "hospital": "City Hospital",
+        "consultation": "Routine check-up, allergic symptoms well controlled."
+      },
+      {
+        "date": "2025-08-10",
+        "hospital": "City Hospital",
+        "consultation": "Discussed travel plans, provided travel health advice."
+      },
+      {
+        "date": "2025-09-05",
+        "hospital": "City Hospital",
+        "consultation": "Seasonal allergies, adjusted allergy medication."
+      },
+      {
+        "date": "2025-10-01",
+        "hospital": "City Hospital",
+        "consultation": "Follow-up for allergies, symptoms responding well to treatment."
+      },
+      {
+        "date": "2025-11-15",
+        "hospital": "City Hospital",
+        "consultation": "Flu vaccination administered."
+      },
+      {
+        "date": "2025-12-20",
+        "hospital": "City Hospital",
+        "consultation": "Discussed stress management techniques, recommended relaxation exercises."
+      },
+      {
+        "date": "2026-01-10",
+        "hospital": "City Hospital",
+        "consultation": "Occasional headaches, advised over-the-counter pain relief."
+      }
     ]
-}
+  }
